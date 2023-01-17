@@ -71,6 +71,14 @@ productForm.addEventListener("submit", function (e) {
 
   // (2)  Task 2  (make a product array and push it into localstorage) //
   addProduct(nameValue, imageValue, priceValue, textValue);
+
+  // clear the input field after add product
+
+  productNameInput.value = "";
+  productImageInput.value = "";
+  productPriceInput.value = "";
+  productTextInput.value = "";
+
 });
 
 // (3) Task 3 (Show Product from localstorage)
